@@ -16,6 +16,7 @@ Central to TRIM is the Trustworthiness Index (TI), a normalized 10-point reprodu
 ## Repository Contents
 - `TRIM_TI_Scoring_Model.ipynb` — Example Python notebook for computing TI scores
 - `TRIM_Pillar_Feature_Extraction.py` — Scripts for extracting Methods, Reporting, Bias, Reproducibility, Incentive indicators
+- `TRIM_Audit_Flowchart.tex` - Overleaf-ready LaTeX template 
 - `TRIM_Certificate_Template.tex` — Overleaf-ready LaTeX template for TRIM Trustworthiness Certificates
 - `TRIM_Audit_Flowchart.tikz` — TikZ source code for the TRIM-AI operational pipeline
 - `TRIM_Example_Paper_Evaluation.pdf` — Full audit report and certificate example

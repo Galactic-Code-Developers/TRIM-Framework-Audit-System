@@ -1,0 +1,30 @@
+
+\begin{tikzpicture}[node distance=1.8cm and 2.5cm, every node/.style={align=center}]
+
+% Main flow nodes
+\node (input) [rectangle, draw, rounded corners, fill=blue!10, minimum width=5cm, minimum height=1cm] {Input Research Paper\\ (PDF, Metadata)};
+\node (feature) [rectangle, draw, rounded corners, below=of input, fill=yellow!20, minimum width=5cm, minimum height=1cm] {AI/NLP Feature Extraction:\\ Methods, Reporting, Reproducibility, Bias, Incentives};
+
+% Branching nodes
+\node (supervised) [rectangle, draw, rounded corners, below left=of feature, fill=green!20, minimum width=5cm, minimum height=1cm] {Supervised ML:\\ Pillar Score Prediction\\ (Random Forest, XGBoost)};
+\node (unsupervised) [rectangle, draw, rounded corners, below right=of feature, fill=orange!20, minimum width=5cm, minimum height=1cm] {Unsupervised ML:\\ Anomaly Detection\\ (Autoencoders, Isolation Forests)};
+
+% Merging node
+\node (merge) [rectangle, draw, rounded corners, below=3.5cm of feature, fill=cyan!20, minimum width=5cm, minimum height=1cm] {Combined AI Analysis};
+
+% Continue flow
+\node (xai) [rectangle, draw, rounded corners, below=of merge, fill=purple!20, minimum width=5cm, minimum height=1cm] {Explainable AI:\\ SHAP, LIME Justifications};
+\node (human) [rectangle, draw, rounded corners, below=of xai, fill=gray!20, minimum width=5cm, minimum height=1cm] {Human Reviewer Validation:\\ (Accept / Adjust AI Predictions)};
+\node (output) [rectangle, draw, rounded corners, below=of human, fill=red!10, minimum width=5cm, minimum height=1cm] {\textbf{Final TI Score Output}\\ (Trustworthiness Index 0--10)};
+
+% Arrows
+\draw[->, thick] (input) -- (feature);
+\draw[->, thick] (feature.south) -- ++(0,-0.5) -| (supervised.north);
+\draw[->, thick] (feature.south) -- ++(0,-0.5) -| (unsupervised.north);
+\draw[->, thick] (supervised.south) -- ++(0,-1.2) -| (merge.west);
+\draw[->, thick] (unsupervised.south) -- ++(0,-1.2) -| (merge.east);
+\draw[->, thick] (merge) -- (xai);
+\draw[->, thick] (xai) -- (human);
+\draw[->, thick] (human) -- (output);
+
+\end{tikzpicture}

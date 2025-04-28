@@ -1,0 +1,38 @@
+{
+  "title": "Trustworthiness Research Index Methodology (TRIM) Framework and Audit System",
+  "upload_type": "software",
+  "publication_date": "2025-04-28",
+  "creators": [
+    {
+      "name": "Adamopoulos, Ioannis",
+      "affiliation": "University of West Attica; Hellenic Open University",
+      "orcid": "0000-0003-3234-6420"
+    },
+    {
+      "name": "Valamontes, Antonios",
+      "affiliation": "Kapodistrian Academy of Science",
+      "orcid": "0009-0008-5616-7746"
+    }
+  ],
+  "description": "The Trustworthiness Research Index Methodology (TRIM) is a reproducibility-centered meta-research framework for evaluating scientific literature across Methods, Reporting Transparency, Reproducibility, Bias Evaluation, and Incentives. This archive includes all TRIM operational and audit flowcharts (.tikz), TI scoring system scripts, and certificate templates, designed for open reproducibility auditing. Developed by Dr. Ioannis Adamopoulos and Antonios Valamontes under the auspices of the Kapodistrian Academy of Science.",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "TRIM",
+    "Trustworthiness Index",
+    "Scientific Reproducibility",
+    "Meta-Research",
+    "Open Science",
+    "Machine Learning",
+    "Scientific Integrity"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.3390/ejihpe15050065",
+      "scheme": "doi"
+    }
+  ],
+  "version": "v1.0",
+  "language": "eng"
+}
